@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Hamburger() {
+
+    const [isActive, setActive] = useState(false);
+
+    const changeClass = () => setActive(!isActive);
+
     return(
-        <div>
-            hamburger
-        </div>
+        <button className={isActive ? 'hamburger hamburger--active' : 'hamburger'} onClick={changeClass}>
+            <span className='hamburger__box'>
+                <span className='hamburger__inner'>
+
+                </span>
+            </span>
+
+        </button>
     )
 }
 
