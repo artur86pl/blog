@@ -1,5 +1,6 @@
 import React from 'react';
 import Hamburger from './hamburger';
+import Years from './years';
 
 function Menu() {
 
@@ -26,10 +27,10 @@ function Menu() {
     // ];
 
     return(
-        <div>
-            Menu
-            <Hamburger />
-        </div>
+        <nav className="nav">
+            {/* <Hamburger /> */}
+            <Years />
+        </nav>
     )
 }
 
