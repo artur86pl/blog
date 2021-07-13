@@ -70,7 +70,9 @@ body{
 
     li:hover{
       background-color: $color2;
-      color: $light;
+      a:hover {
+        color: $light;
+      }
 
       ul{
         display: block; 

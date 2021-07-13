@@ -76,6 +76,9 @@ body {
 
 .nav__years li:hover {
   background-color: #227d9e;
+}
+
+.nav__years li:hover a:hover {
   color: white;
 }
 
