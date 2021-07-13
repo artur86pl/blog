@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import './fontello/css/awes.css';
 import Logo from './components/logo';
 import Menu from './components/menu';
 import Content from './components/content';

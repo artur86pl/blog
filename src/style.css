@@ -27,16 +27,16 @@ body {
           align-items: center;
 }
 
-.content > div:nth-child(odd) {
+.content__post p {
+  max-width: 700px;
+  text-align: justify;
+}
+
+.content div:nth-child(odd) {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-}
-
-.content__post > p {
-  max-width: 700px;
-  text-align: justify;
 }
 
 .nav {
@@ -66,7 +66,7 @@ body {
   color: #282c34;
   text-decoration: none;
   display: block;
-  min-width: 90px;
+  min-width: 89px;
   border-left: 1px dashed #282c34;
 }
 
@@ -101,5 +101,56 @@ body {
   background-color: #227d9e;
   position: relative;
   border-top: 1px dashed #282c34;
+}
+
+footer {
+  width: 100%;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.socials {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tile {
+  width: 25%;
+  height: 15vw;
+  max-height: 155px;
+  position: relative;
+}
+
+.tile i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: calc(4vw + 2em);
+}
+
+.tile--fb:hover {
+  background-color: #3b5998;
+}
+
+.tile--yt:hover {
+  background-color: #c4302b;
+}
+
+.tile--tw:hover {
+  background-color: #00acee;
+}
+
+.tile--in:hover {
+  background: linear-gradient(45deg, #fed225 15%, #f0000d, #ba03b3);
 }
 /*# sourceMappingURL=style.css.map */
