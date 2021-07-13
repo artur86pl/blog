@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Hamburger() {
+const Hamburger = () => {
 
     const [isActive, setActive] = useState(false);
 

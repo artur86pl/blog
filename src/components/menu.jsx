@@ -2,7 +2,7 @@ import React from 'react';
 // import Hamburger from './hamburger';
 import Years from './years';
 
-function Menu() {
+const Menu = () => {
 
     // const years =[
     //     2018,

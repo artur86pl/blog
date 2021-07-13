@@ -17,14 +17,12 @@ body {
   min-height: 200px;
   margin: 30px;
   border-radius: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 10px 20px;
 }
 
 .content__post p {
@@ -66,7 +64,7 @@ body {
   color: #282c34;
   text-decoration: none;
   display: block;
-  min-width: 89px;
+  min-width: 110px;
   border-left: 1px dashed #282c34;
 }
 
@@ -152,5 +150,13 @@ footer a {
 
 .tile--in:hover {
   background: linear-gradient(45deg, #fed225 15%, #f0000d, #ba03b3);
+}
+
+@media (min-width: 768px) {
+  .content__post {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 /*# sourceMappingURL=style.css.map */

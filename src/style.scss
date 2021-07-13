@@ -24,9 +24,10 @@ body{
     min-height: 200px;
     margin: 30px;
     border-radius: 30px;
-    display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 10px 20px;
+    
 
     p {
       max-width: 700px;
@@ -62,7 +63,7 @@ body{
       color: $dark;
       text-decoration: none;
       display: block;
-      min-width: 89px;
+      min-width: 110px;
       border-left: 1px dashed $dark; 
     }
     
@@ -143,4 +144,12 @@ footer{
   &--in:hover{
     background: linear-gradient(45deg, #fed225 15%,#f0000d,#ba03b3);
   }
+}
+
+@media (min-width: 768px) {
+  .content{  
+    &__post{
+       display: flex;
+    }
+  }  
 }
