@@ -172,7 +172,7 @@ const story = [
         month: 9,
         day: 19,
         massage: "Dziś mieliśmy pierwsze pełnoprawne zajęcia w trójkę. To co przedstawia Paulina to dobre uzupełnienie tego czego nauczyłem się do tej pory.",
-        imgSrc: "../img/htlm.jpg",
+        imgSrc: "../img/html.jpg",
         imgAlt: "HTML",
     },
     {

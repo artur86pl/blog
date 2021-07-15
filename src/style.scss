@@ -155,4 +155,12 @@ footer{
        display: flex;
     }
   }  
+
+  .nav{
+    &__years{
+      li a{
+        min-width: 200px;
+      }
+    }
+  }  
 }

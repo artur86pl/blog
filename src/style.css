@@ -163,5 +163,8 @@ footer a {
     display: -ms-flexbox;
     display: flex;
   }
+  .nav__years li a {
+    min-width: 200px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

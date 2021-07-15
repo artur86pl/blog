@@ -1,7 +1,0 @@
-const IMAGES = {
-    armia: require('./armia.jpg').default,
-    brenna: require('brenna.jpg').default,
-    cSharp: require('C-Sharp.jpg').default,
-}
-
-export default IMAGES;

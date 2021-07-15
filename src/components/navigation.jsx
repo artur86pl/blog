@@ -1,56 +1,38 @@
 import React from "react";
 
 const Navigation = () => {
+
+    const yearsArray =[
+        2019,
+        2020,
+        2021,
+    ];
+
+    const monthsArray =[
+        'styczeń',
+        'luty',
+        'marzec',
+        'kwiecień',
+        'maj',
+        'czerwiec',
+        'lipiec',
+        'sierpień',
+        'wrzesień',
+        'październik',
+        'listopad',
+        'grudzień',
+    ];
+
+    const monthGenerator = () => monthsArray.map(month => <li key={month}><a href="#">{month}</a></li>); 
+
     return (
         <ol className="nav__years">
-            <li><a href="#">2019</a>
+            {yearsArray.map(year => 
+            <li key={year}><a href="">{year}</a>
                 <ul className="nav__years__months">
-                    <li><a href="#">styczeń</a></li>
-                    <li><a href="#">luty</a></li>
-                    <li><a href="#">marzec</a></li>
-                    <li><a href="#">kwiecień</a></li>
-                    <li><a href="#">maj</a></li>
-                    <li><a href="#">czerwiec</a></li>
-                    <li><a href="#">lipiec</a></li>
-                    <li><a href="#">sierpień</a></li>
-                    <li><a href="#">wrzesień</a></li>
-                    <li><a href="#">październik</a></li>
-                    <li><a href="#">listopad</a></li>
-                    <li><a href="#">grudzień</a></li>
+                    {monthGenerator()}
                 </ul>            
-            </li>
-            <li><a href="#">2020</a>
-                <ul className="nav__years__months">
-                    <li><a href="#">styczeń</a></li>
-                    <li><a href="#">luty</a></li>
-                    <li><a href="#">marzec</a></li>
-                    <li><a href="#">kwiecień</a></li>
-                    <li><a href="#">maj</a></li>
-                    <li><a href="#">czerwiec</a></li>
-                    <li><a href="#">lipiec</a></li>
-                    <li><a href="#">sierpień</a></li>
-                    <li><a href="#">wrzesień</a></li>
-                    <li><a href="#">październik</a></li>
-                    <li><a href="#">listopad</a></li>
-                    <li><a href="#">grudzień</a></li>
-                </ul>
-            </li>
-            <li><a href="#">2021</a>
-                <ul className="nav__years__months">
-                    <li><a href="#">styczeń</a></li>
-                    <li><a href="#">luty</a></li>
-                    <li><a href="#">marzec</a></li>
-                    <li><a href="#">kwiecień</a></li>
-                    <li><a href="#">maj</a></li>
-                    <li><a href="#">czerwiec</a></li>
-                    <li><a href="#">lipiec</a></li>
-                    <li><a href="#">sierpień</a></li>
-                    <li><a href="#">wrzesień</a></li>
-                    <li><a href="#">październik</a></li>
-                    <li><a href="#">listopad</a></li>
-                    <li><a href="#">grudzień</a></li>
-                </ul>
-            </li>
+            </li>)}
         </ol>
     )
 }
