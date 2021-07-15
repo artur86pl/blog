@@ -5,7 +5,7 @@ import Header from './components/header';
 import Content from './components/content';
 import Footer from './components/footer';
 
-import './style.css';
+import './assets/style.css';
 
 ReactDOM.render(
   <React.StrictMode>

@@ -4,6 +4,12 @@ $color: #6dd4fc;
 $color2: #227d9e;
 $max_width: 1000px;
 
+@mixin style-distance-cleaning{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
 
 
 body{
@@ -24,7 +30,7 @@ body{
     min-height: 200px;
     margin: 30px;
     border-radius: 30px;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 10px 20px;
 
@@ -54,9 +60,8 @@ body{
 
 
   &__years{
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
+    @include style-distance-cleaning;
+
     font-size: 18px;
     line-height: 300%;
     display: flex;
@@ -86,9 +91,8 @@ body{
     }
     
     &__months{
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
+      @include style-distance-cleaning;
+
       display: none;
 
       a {

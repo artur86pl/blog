@@ -1,6 +1,9 @@
 import React from 'react';
 
 const Post = ( {year, month, day, massage, img, imgAlt}) => {
+
+    const dateFormat = date => date < 10 ? date = '0' + date : date;
+
     return(
         <article>
             <div className="content__post">
@@ -8,7 +11,7 @@ const Post = ( {year, month, day, massage, img, imgAlt}) => {
                 <div>
                     <header>
                         <p>
-                            {day}.{month}.{year}
+                            {dateFormat(day)}.{dateFormat(month)}.{year}
                         </p>
                     </header>
                     <p>
