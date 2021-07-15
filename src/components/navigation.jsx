@@ -1,6 +1,6 @@
 import React from "react";
 
-const Years = () => {
+const Navigation = () => {
     return (
         <ol className="nav__years">
             <li><a href="#">2019</a>
@@ -55,4 +55,4 @@ const Years = () => {
     )
 }
 
-export default Years;
+export default Navigation;

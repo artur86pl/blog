@@ -17,12 +17,17 @@ body {
   min-height: 200px;
   margin: 30px;
   border-radius: 30px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 10px 20px;
+}
+
+.content__post header {
+  font-weight: bold;
 }
 
 .content__post p {
@@ -30,7 +35,7 @@ body {
   text-align: justify;
 }
 
-.content div:nth-child(odd) {
+.content article:nth-child(odd) div {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;

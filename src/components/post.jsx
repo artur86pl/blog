@@ -2,19 +2,21 @@ import React from 'react';
 
 const Post = ( {year, month, day, massage, img, imgAlt}) => {
     return(
-        <div className="content__post">
-            <img src={img} alt={imgAlt}  height="120px"/>
-            <div>
-                <p>
-                    <strong>
-                    {day}.{month}.{year}
-                    </strong>
-                </p>
-                <p>
-                    {massage}
-                </p>
+        <article>
+            <div className="content__post">
+                <img src={img} alt={imgAlt}  height="120px"/>
+                <div>
+                    <header>
+                        <p>
+                            {day}.{month}.{year}
+                        </p>
+                    </header>
+                    <p>
+                        {massage}
+                    </p>
+                </div>
             </div>
-        </div>
+        </article>
     )
 }
 

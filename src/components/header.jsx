@@ -1,8 +1,8 @@
 import React from 'react';
-// import Hamburger from './hamburger';
-import Years from './years';
+import Logo from './logo';
+import Navigation from './navigation';
 
-const Menu = () => {
+const Header = () => {
 
     // const years =[
     //     2018,
@@ -27,11 +27,15 @@ const Menu = () => {
     // ];
 
     return(
-        <nav className="nav">
-            {/* <Hamburger /> */}
-            <Years />
-        </nav>
+        <header>
+            <Logo />
+            <nav>
+                <div className="nav">
+                    <Navigation />
+                </div>
+            </nav>
+        </header>
     )
 }
 
-export default Menu;
+export default Header;
